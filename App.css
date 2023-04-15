@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+body{
+  background-color: rgba(230, 229, 229, 0.368);
+  margin: 0;
+  box-sizing: border-box;
+}
+div h2{
+  margin-top:40px;
+  margin-left:4% ;
+  text-align: left;
+  color: gray;
+  font-family: Montserrat, sans serif;
+  font-weight: 400;
+}
+.displayArticles{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 22em 22em 22em ;
+  flex-wrap: wrap;
+}
+
+.paginationButtons{
+  display:flex;
+  height:40px;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 2em;
+}
+
+.paginationButtons a {
+  padding:10px;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin: 8px;
+  border-radius: 30px;
+  border: 1px solid #4AA3A2;
+  cursor:pointer;
+  color:rgb(95, 95, 95);
+}
+
+.paginationButtons a:hover{
+  background-color: #4AA3A2;
+  color:white;
+  transition: 0.4s;
+}
+.paginationActive a{
+  background-color: #4AA3A2;
+  color:white;
+}
+
+@media all and (max-width:1050px){
+  .displayArticles{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25em 25em;
+    align-items: center;
+  }
+}
+@media all and (max-width:790px){
+  .displayArticles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
